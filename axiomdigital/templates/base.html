@@ -1,0 +1,31 @@
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
+<!doctype html>
+<html>
+<head>
+    <title>{% block title %}Axiom Digital{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    {% render_block "css" %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="{% static 'js/animation.js' %}"></script>
+    <script src="{% static 'js/typed.min.js' %}"></script>
+    <script src="{% static 'js/smooth-scroll.min.js' %}"></script>
+    <link rel='stylesheet' type='text/css' href='{% static 'css/bootstrap.css' %}'>
+    <link rel='stylesheet' type='text/css' href='{% static 'css/style.css' %}'>
+    <link href="https://fonts.googleapis.com/css?family=Khula:300,700" rel="stylesheet">
+</head>
+<body>
+{% cms_toolbar %}
+<div class='nav'>
+    <a href='#'><img src='{% static 'img/logo.png' %}' %}'></a>
+    <ul>
+        {% show_menu 0 100 100 100 %}
+    </ul>
+</div>
+{% block content %}{% endblock content %}
+</div>
+<footer>
+    <p>Axiom Digital 2016 | All Rights Reserved.</p>
+</footer>
+{% render_block "js" %}
+</body>
+</html>

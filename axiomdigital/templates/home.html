@@ -1,0 +1,36 @@
+{% extends 'main.html' %}
+{% load staticfiles cms_tags %}
+{% block main %}
+<div class='page-background auto-resize' style="background-image: url('static/img/la.jpg')">
+    <h1 class='jumbo page-background-text'>AXIOM <span>DIGITAL</span></h1>
+</div>
+<div class='auto-resize main page'>
+    <div class='main-content'>
+        <p>
+            A <span style='font-weight:700;'>Website</span> is your <br>
+            <span class='typed'></span><br>
+            <span class='success-text'>Launchpad to Success.</span>
+        </p>
+        <a data-scroll href='#begin' class='btn main-btn' id='start-btn'>See What We Do</a>
+    </div>
+</div>
+<!-- About Section -->
+<div class='site' id='home'>
+    <div class='auto-resize'></div>
+    <a id='begin' class='scroll-anchor'></a>
+    <div class='section'>
+        <div class='content-block-medium'>
+            <h1>OUR WORK</h1>
+            <div>
+                {% placeholder 'Work' %}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    smoothScroll.init({
+        speed: 1500,
+        easing: 'easeInOutCubic',
+    });
+</script>
+{% endblock %}
