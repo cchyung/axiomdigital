@@ -2,7 +2,7 @@
 {% load staticfiles cms_tags %}
 {% block main %}
     <div class='nav-spacer'></div>
-    <div class='main section auto-resize' style="background-image:url('static/img/arctic.png')">
+    <div class='main section auto-resize' style="background-image:url('{% static 'img/arctic.png' %}')">
         <div class='main-content'>
             <p style='color: black;'>WE DO <span style='font-weight:700;'>BIG</span><br>THINGS
             <p>
@@ -23,15 +23,12 @@
             {% placeholder 'product' %}
         </div>
     </div>
-    <div id="quote">
-        {% placeholder 'quote' %}
+    <div class='section alt main' id='quote' style="background-image:url('{% static 'img/buildings.png' %}')">
+        <div class='content-block-medium'>{% placeholder 'quote' %}</div>
     </div>
     <div class='section'>
         <div class='content-block-medium split-block'>
-            <h1>Not Your Everyday Digital Agency</h1>
-            <p>
-                Blablablablablablablablabla
-            </p>
+            {% placeholder 'split' %}
         </div>
     </div>
 {% endblock %}
