@@ -1,36 +1,49 @@
 {% extends 'main.html' %}
 {% load staticfiles cms_tags %}
 {% block main %}
-<div class='page-background auto-resize' style="background-image: url('static/img/la.jpg')">
-    <h1 class='jumbo page-background-text'>AXIOM <span>DIGITAL</span></h1>
-</div>
-<div class='auto-resize main page'>
-    <div class='main-content'>
-        <p>
-            A <span style='font-weight:700;'>Website</span> is your <br>
-            <span class='typed'></span><br>
-            <span class='success-text'>Launchpad to Success.</span>
-        </p>
-        <a data-scroll href='#begin' class='btn main-btn' id='start-btn'>See What We Do</a>
+    <div class='page-background auto-resize' style="background-image: url({% static 'img/la.jpg' %})">
+        <h1 class='jumbo page-background-text'>AXIOM <span>DIGITAL</span></h1>
     </div>
-</div>
-<!-- About Section -->
-<div class='site' id='home'>
-    <div class='auto-resize'></div>
-    <a id='begin' class='scroll-anchor'></a>
-    <div class='section'>
-        <div class='content-block-medium'>
-            <h1>OUR WORK</h1>
-            <div>
-                {% placeholder 'Work' %}
+    <div class='auto-resize main page' style="background-image: url({% static 'img/main-bg.png' %})">
+        <div class='main-content'>
+            <p>
+                We want to bring your<br>
+                <span class='typed'></span><br>
+                <span class='success-text'>to life.</span>
+            </p>
+            <a data-scroll href='#begin' class='btn main-btn' id='start-btn'>See What We Do</a>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div class='site' id='home'>
+        <div class='auto-resize spacer'></div>
+        <a id='begin' class='scroll-anchor'></a>
+        <div class='section'>
+            <div class="content-block-medium">
+                <h1 class="center-text">We Build Powerful and Engaging Digital Experiences</h1>
+                <div class="services sr">
+                    <div class="service-box sr-tile" style="background-image: url({% static 'img/web-tile.png' %})"></div>
+                    <div class="service-box sr-tile" style="background-image: url({% static 'img/responsive-tile.png' %})"></div>
+                    <div class="service-box sr-tile" style="background-image: url({% static 'img/seo-tile.png' %})"></div>
+                    <div class="service-box sr-tile" style="background-image: url({% static 'img/ecommerce-tile.png' %})"></div>
+                    <div class="service-box sr-tile" style="background-image: url({% static 'img/marketing-tile.png' %})"></div>
+                    <div class="service-box sr-tile" style="background-image: url({% static 'img/graphic-tile.png' %})"></div>
+                </div>
+            </div>
+        </div>
+        <div class='section-darker'>
+            <div class='content-block-medium'>
+                <h1 class="center-text">OUR WORK</h1>
+                <div class="work sr">
+                    {% placeholder 'Work' %}
+                </div>
             </div>
         </div>
     </div>
-</div>
-<script>
-    smoothScroll.init({
-        speed: 1500,
-        easing: 'easeInOutCubic',
-    });
-</script>
+    <script>
+        smoothScroll.init({
+            speed: 1500,
+            easing: 'easeInOutCubic',
+        });
+    </script>
 {% endblock %}

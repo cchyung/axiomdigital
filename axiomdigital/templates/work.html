@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+{% load staticfiles cms_tags %}
+{% block main %}
+    <div class="background-vid main">
+        <div class="">
+            <h1>OUR WORK</h1>
+            <p>Here's some of the stuff we've been working on.</p>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="section" style="background-color: white;">
+        <div class="content-block-medium">
+            <div class="work">
+                {% placeholder 'work' %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
