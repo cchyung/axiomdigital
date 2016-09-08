@@ -14,7 +14,7 @@ function resizeDiv() {
     if (vph > 500) {
         $(".auto-resize").css({"height": vph + "px"});
 
-    } 
+    }
 }
 
 function displaySuccess(callback) {
