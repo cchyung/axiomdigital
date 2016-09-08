@@ -7,10 +7,18 @@
     <div class="work-headline">
         {% placeholder 'headline' %}
     </div>
-    <div class="work-slideshow">
-        {% placeholder 'slideshow' %}
+    <div class="section-darker work-feature">
+        {% placeholder 'feature 2' %}
     </div>
     <div class="work-final">
         {% placeholder 'final' %}
     </div>
+    <script>
+        $(document).ready(function () {
+            $('.work-slideshow').slick({
+                'arrows': false,
+                'autoplay': true
+            });
+        });
+    </script>
 {% endblock %}
