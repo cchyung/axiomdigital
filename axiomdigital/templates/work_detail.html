@@ -1,5 +1,16 @@
 {% extends 'main.html' %}
 {% load staticfiles cms_tags %}
 {% block main %}
-
+    <div class="section-darker work-feature">
+        {% placeholder 'feature' %}
+    </div>
+    <div class="work-headline">
+        {% placeholder 'headline' %}
+    </div>
+    <div class="work-slideshow">
+        {% placeholder 'slideshow' %}
+    </div>
+    <div class="work-final">
+        {% placeholder 'final' %}
+    </div>
 {% endblock %}

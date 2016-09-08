@@ -182,6 +182,7 @@ CMS_TEMPLATES = (
     ('home.html', 'Home'),
     ('about.html', 'About'),
     ('work.html', 'Work'),
+    ('work_detail.html', 'Work Detail')
 )
 
 CMS_PERMISSION = True
