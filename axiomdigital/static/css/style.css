@@ -480,7 +480,7 @@ a:hover {
 
 .work-feature img {
     display: block;
-    margin: 0 auto;
+    margin: 2em auto;
     width: 80%;
     box-shadow: 3px 3px 3px #8c8c8c;
 
@@ -652,6 +652,10 @@ a:hover {
 
     body {
         margin: 0;
+    }
+
+    .work-final .btn {
+        width: 60%;
     }
 
 }
