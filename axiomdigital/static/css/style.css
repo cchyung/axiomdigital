@@ -499,16 +499,23 @@ a:hover {
 
 }
 
-    .auto-resize{
-        min-height: 500px;
-    }
+.auto-resize {
+    min-height: 500px;
+}
 
+.work-feature img {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.work-headline {
+    text-align: center;
+}
 
 @media only screen and (max-width: 700px) {
     h1 {
         font-size: 2.0em;
     }
-
 
     .content-column {
         display: block;
@@ -516,7 +523,7 @@ a:hover {
         margin: 0 auto;
     }
 
-    .content-block-medium{
+    .content-block-medium {
         width: 80%;
 
     }
@@ -600,7 +607,7 @@ a:hover {
         margin: 0;
     }
 
-    .about-column img{
+    .about-column img {
         display: block;
         width: 4em;
         margin: 0 auto;
