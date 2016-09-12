@@ -13,6 +13,9 @@
     <script src="{% static 'js/jquery.vide.min.js' %}"></script>
     <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
     <script src="{% static 'js/slick.min.js' %}"></script>
+    <meta name="description"
+          content="Axiom Digital is an LA based digital agency specializing in custom website design,
+          search engine optimization, and Ecommerce tool integration.">
     <link rel='stylesheet' type='text/css' href='{% static 'css/bootstrap.css' %}'>
     <link rel='stylesheet' type='text/css' href='{% static 'css/style.css' %}'>
     <link href="https://fonts.googleapis.com/css?family=Khula:300,700" rel="stylesheet">
@@ -20,8 +23,8 @@
     <meta name="keywords" content="web, design, digital, marketing, custom, website, seo, responsive">
     <meta name="og:image" content="{% static 'img/logo.png' %}">
     <link rel="icon"
-      type="image/ico"
-      href="{% static 'img/favicon.ico' %}">
+          type="image/ico"
+          href="{% static 'img/favicon.ico' %}">
 </head>
 <body>
 {% cms_toolbar %}
@@ -50,13 +53,20 @@
 
 </script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-83862658-1', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-83862658-1', 'auto');
+    ga('send', 'pageview');
 
 </script>
 </body>
