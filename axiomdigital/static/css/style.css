@@ -493,6 +493,7 @@ a:hover {
 
 .work-final {
     margin: 4em 0;
+    text-align: center;
 }
 
 .work-final .btn {
@@ -542,7 +543,11 @@ a:hover {
 }
 
 .auto-resize {
-    min-height: 500px;
+
+}
+
+.restrict-height {
+    max-height: 500px;
 }
 
 @media only screen and (max-width: 700px) {
